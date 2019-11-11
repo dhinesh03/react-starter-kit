@@ -7,6 +7,7 @@ module.exports = {
     entryPath: resolve(__dirname, '../', '../', 'src/index.js'),
     templatePath: resolve(__dirname, '../', '../', 'src/index.html'),
     envDevPath: resolve(__dirname, '../', 'environment', '.env.development'),
+    envProdPath: resolve(__dirname, '../', 'environment' , '.env.production'),
     envPath: resolve(__dirname, '../', 'environment' , '.env'),
     eslintConfigPath: resolve(__dirname, '../', '../', '.eslintrc.js'),
 };

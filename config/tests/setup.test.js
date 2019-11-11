@@ -1,4 +1,14 @@
 const { resolve } = require('path');
+const envPath = resolve(__dirname, '../', 'environment', '.env');
+const envTestPath = resolve(__dirname, '../', 'environment', '.env.test');
 // Load test specify env configurations
-require('dotenv').config({path: resolve(__dirname, '../', 'environment', '.env.test')})
-console.log('process.env.BASE_URL==>',process.env.BASE_URL)
+require('dotenv-expand')(
+    require('dotenv').config({
+        path: envPath,
+    })
+);
+require('dotenv-expand')(
+    require('dotenv').config({
+        path: envTestPath,
+    })
+);

@@ -1,8 +1,9 @@
-//Disable jsx-a11y
 let a11yRules = {};
+//Uncomment the following if you want to Disable jsx-a11y rules
+/*
 Object.keys(require('eslint-plugin-jsx-a11y').rules).forEach(rule => {
     a11yRules[`jsx-a11y/${rule}`] = 'off';
-});
+});*/
 
 module.exports = {
     parser: 'babel-eslint',

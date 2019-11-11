@@ -9,7 +9,7 @@ module.exports = function(api) {
                 targets: {
                     node: 'current'
                 },
-                debug: true
+                /* debug: true */
             }
         ]);
         plugins.push('babel-plugin-dynamic-import-node');
@@ -20,7 +20,7 @@ module.exports = function(api) {
                 // Allow importing core-js in entrypoint and use browserlist to select polyfills
                 useBuiltIns: 'entry',
                 corejs: { version: '3.3' },
-                debug: true
+                /* debug: true */
             }
         ]);
     }
